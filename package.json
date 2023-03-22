@@ -1,0 +1,28 @@
+{
+  "name": "xstate-typegen-node-esm-repro",
+  "version": "0.0.0",
+  "description": "Repro",
+  "type": "module",
+  "engines": {
+    "node": ">= 18.12 <19"
+  },
+  "devDependencies": {
+    "@types/node": "~18",
+    "tsutils": "~3.21",
+    "typescript": "~5.0"
+  },
+  "scripts": {
+    "start": "node build/src/main.js",
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json"
+  },
+  "author": "Stefan Aebischer",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "tslib": "~2.5",
+    "xstate": "^4.37.0"
+  },
+  "volta": {
+    "node": "18.12.1"
+  }
+}
